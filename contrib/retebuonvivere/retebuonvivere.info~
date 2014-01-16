@@ -1,0 +1,32 @@
+name        = retebuonvivereTheme
+description = Theme of retebuonvivere
+screenshot  = screenshot.png
+core        = 7.x
+
+; Base - Radix
+base theme  = radix
+
+; Regions
+regions[content] = Content
+regions[content] = sidebar_first
+
+; Features
+features[] = slogan
+features[] = main_menu
+features[] = secondary_menu
+
+; Panels
+plugins[panels][layouts] = panels/layouts
+plugins[panels][styles] = panels/styles
+
+; CSS - General
+stylesheets[all][]     = assets/stylesheets/screen.css
+stylesheets[print][]   = assets/stylesheets/print.css
+
+; CSS - Conditional
+stylesheets-conditional[IE 7][all][] = assets/stylesheets/ie7.css
+stylesheets-conditional[IE 8][all][] = assets/stylesheets/ie8.css
+
+; Javascript
+scripts[] = assets/javascripts/script.js
+
