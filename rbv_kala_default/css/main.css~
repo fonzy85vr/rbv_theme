@@ -1,0 +1,18 @@
+/*! 
+ * Kalatheme (http://drupal.org/project/kalatheme) 
+ */
+.field-label {
+font-size: 10px;
+}
+
+field-name-field-com-logo {
+float: left;
+}
+
+.field-name-field-com-tagline {
+float: right;
+}
+
+.field-name-field-com-social-links {
+float: right;
+}
