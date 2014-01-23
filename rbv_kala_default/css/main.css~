@@ -1,18 +1,109 @@
 /*! 
  * Kalatheme (http://drupal.org/project/kalatheme) 
  */
+
+/* field */
 .field-label {
-font-size: 10px;
+font-size: .8em;
 }
 
-field-name-field-com-logo {
+/* field > date */
+.field-name-field-com-date .date-display-start {
+-moz-border-radius: .4em;
+border-radius: .4em;
+background: #E3FFCE;
+padding: .3em .5em .2em .5em;
+margin: .2em;
+}
+
+.field-name-field-com-date .date-display-end {
+-moz-border-radius: .4em;
+border-radius: .4em;
+background: #FFCECE;
+padding: .3em .5em .2em .5em;
+margin: .2em;
+}
+
+/* fieldset */
+.field-group-fieldset {
+-moz-border-radius: .8em;
+border-radius: .8em;
+}
+
+fieldset legend {
+margin-bottom: .7em;
+}
+
+a.fieldset-title:link {
+font-size: .6em;
+color: #909090;
+}
+
+/* taxonomy */
+.field-type-taxonomy-term-reference ul.links {
+list-style: none;
+}
+
+.field-type-taxonomy-term-reference a {
+-moz-border-radius: .4em;
+border-radius: .4em;
+padding: .3em .5em .2em .5em;
+margin: .2em;
+white-space: nowrap;
+}
+
+.field-name-field-com-categories a {
+background: #FFEAB9;
 float: left;
 }
 
-.field-name-field-com-tagline {
+.field-name-field-com-tags a {
+background: #CEEAFF;
+float: left;
+}
+
+.field-name-field-org-type a {
+background: #E6D2FC;
+}
+
+/* org  
+     info */
+.group-org-display-info {
+background: #fbfbfb;
+}
+
+.group-org-display-info .field-name-field-com-logo {
+float: left;
+padding-right: 1.5em;
+padding-bottom: 1em;
+}
+
+.group-org-display-info .field-name-field-com-tagline {
+padding-bottom: 1em;
+}
+
+.group-org-display-info .field-name-field-com-social-links {
+padding: 1em 1em 0 0;
+}
+
+.group-org-display-info .field-name-field-com-social-links .field-item {
+padding-bottom: .45em;
 float: right;
 }
 
-.field-name-field-com-social-links {
-float: right;
+/* org 
+     description */
+.group-org-display-description .field-type-taxonomy-term-reference {
+padding-bottom: 1.5em;
+clear:both;
 }
+
+.group-org-display-description  .field-type-text-with-summary {
+clear: both;
+}
+
+.field-name-field-com-mission, .field-name-field-com-description, .field-name-field-com-history {
+padding-top: 1em;
+}
+
+
