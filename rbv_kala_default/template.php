@@ -10,3 +10,8 @@
   }
 } */
 
+function rbv_kala_default_preprocess_node(&$variables) {
+    if ($variables['view_mode'] != 'teaser') {
+      $variables['classes_array']['class'][] = 'node-' . $variables['view_mode'];
+  }
+}
