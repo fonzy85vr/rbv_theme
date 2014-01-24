@@ -3,7 +3,7 @@
  * rbv_kala_default kalatheme subtheme
  */
 
-cd p/* field */
+/* field */
 .field-label {
 font-size: .8em;
 }
@@ -14,14 +14,14 @@ font-size: .8em;
 border-radius: .4em;
 background: #E3FFCE;
 padding: .3em .5em .2em .5em;
-margin: .2em 0 .2em 0;
+line-height: 1.8em;
 }
 .date-display-end {
 -moz-border-radius: .4em;
 border-radius: .4em;
 background: #FFCECE;
 padding: .3em .5em .2em .5em;
-margin: .2em 0 .2em 0;
+line-height: 1.8em;
 }
 
 /* field > logo */
@@ -33,12 +33,20 @@ padding: 0 1em 1em 0;
 /* field > slogan */
 .field-name-field-com-tagline {
 padding-bottom: 1em;
-font-size: 1.35em;
+font-size: 1.2em;
 font-family: georgia;
 font-style: italic;
 }
 .field-name-field-com-tagline .field-item:before, .field-name-field-com-tagline .field-item:after {
 content: "\""
+}
+/* field social link */
+.field-name-field-com-social-links {
+padding: 1em 1em 0 0;
+}
+.field-name-field-com-social-links .field-item {
+padding-bottom: .45em;
+float: right;
 }
 
 /* taxonomy */
@@ -46,9 +54,9 @@ content: "\""
 list-style: none;
 }
 .field-type-taxonomy-term-reference a {
--moz-border-radius: .4em;
-border-radius: .4em;
-padding: .3em .5em .2em .5em;
+-moz-border-radius: .3em;
+border-radius: .3em;
+padding: .1em .3em .1em .3em;
 margin: .2em;
 white-space: nowrap;
 }
@@ -70,34 +78,45 @@ float: left;
 background: #FFFFFF;
 }
 
-/* sidebar 
-.burr-flipped-sidebar-content .pane-title {
-font-size: 1.6em;
+/* panels */
+/* pane titles */
+.node-type-org .views-row {
 background: #fbfbfb;
+-moz-border-radius: .4em;
+border-radius: .4em;
+margin: .5em;
+padding: .5em;
 }
-.burr-flipped-sidebar-content .view-content {
-padding-left: .9em;
+
+.node-type-project .views-row {
+background: #fbfbfb;
+-moz-border-radius: .4em;
+border-radius: .4em;
+margin: .5em;
+padding: .5em;
+float: left;
 }
-.burr-flipped-sidebar-content .node h2 {
-font-size: 1.7em;
-margin-top: 1em;
+
+.pane-title {
+clear: both;
+font-size: 1.3em;
+margin-top: 1.5em;
 }
-.burr-flipped-sidebar-content .field-name-og-group-ref {
+.node h2 {
+font-size: 1.4em;
+}
+
+/* pane og group ref */
+.group-vmode-group-content .field-name-og-group-ref {
 clear: both;
 }
-.burr-flipped-sidebar-content .field-name-og-group-ref a {
-color: #333333;
+.group-vmode-group-content .field-name-og-group-ref a:before {
+content: 'di ';
 }
-.burr-flipped-sidebar-content .field-name-field-com-tagline {
+.group-vmode-group-content .field-name-field-com-tagline {
 padding-bottom: 0;
 font-size: 1em;
 }
-.pane-node-create-links {
-background: black;
--moz-border-radius: .4em;
-border-radius: .4em;
-}
-*/
 
 /* fieldset */
 .field-group-fieldset {
@@ -113,33 +132,24 @@ color: #909090;
 }
 
 /* fieldset > org > info */
-.group-org-display-info {
+.group-org-display-info, .group-project-display-info {
 background: #fbfbfb;
 }
-.group-org-display-info .field-name-field-com-logo {
+.group-org-display-info .field-name-field-com-logo, .group-project-display-info .field-name-field-com-logo {
 padding-right: 1.6em;
 padding-bottom: 2em;
 }
-.group-org-display-info .field-name-field-com-tagline {
+.group-org-display-info .field-name-field-com-tagline, .field-name-field-com-logo .field-name-field-com-tagline {
 padding-bottom: 1em;
-}
-.group-org-display-info .field-name-field-com-social-links {
-padding: 1em 1em 0 0;
-}
-.group-org-display-info .field-name-field-com-social-links .field-item {
-padding-bottom: .45em;
-float: right;
 }
 
 /* fieldset > org > description */
-.group-org-display-description .field-type-taxonomy-term-reference {
+.group-org-display-description .field-type-taxonomy-term-reference, .group-project-display-description .field-type-taxonomy-term-reference {
 padding-bottom: 1.5em;
 clear:both;
 }
-.group-org-display-description  .field-type-text-with-summary {
-clear: both;
-}
 .field-name-field-com-mission, .field-name-field-com-description, .field-name-field-com-history {
+clear: both;
 padding-top: 1em;
 }
 
