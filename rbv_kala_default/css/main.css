@@ -2,6 +2,9 @@
  * Kalatheme (http://drupal.org/project/kalatheme) 
  * rbv_kala_default kalatheme subtheme
  */
+html {
+font-size: 100%;
+}
 
 /* field */
 .field-label {
@@ -22,6 +25,15 @@ border-radius: .4em;
 background: #FFCECE;
 padding: .3em .5em .2em .5em;
 line-height: 1.8em;
+}
+
+/* group visibility */
+.field-name-group-access {
+background: #FFF69B;
+-moz-border-radius: .4em;
+border-radius: .4em;
+margin: .5em;
+padding: .5em;
 }
 
 /* field > logo */
@@ -78,8 +90,7 @@ float: left;
 background: #FFFFFF;
 }
 
-/* panels */
-/* pane titles */
+/* panes */
 .node-type-org .views-row {
 background: #fbfbfb;
 -moz-border-radius: .4em;
@@ -118,6 +129,14 @@ padding-bottom: 0;
 font-size: 1em;
 }
 
+/* node teaser */
+.node-teaser ul.links {
+clear: both;
+}
+.node-teaser .field-name-field-com-categories a {
+float: left;
+}
+
 /* fieldset */
 .field-group-fieldset {
 -moz-border-radius: .8em;
@@ -148,7 +167,7 @@ padding-bottom: 1em;
 padding-bottom: 1.5em;
 clear:both;
 }
-.field-name-field-com-mission, .field-name-field-com-description, .field-name-field-com-history {
+.field-group-fieldset .field-name-field-com-mission, .field-group-fieldset .field-name-field-com-description, .field-group-fieldset .field-name-field-com-history {
 clear: both;
 padding-top: 1em;
 }
