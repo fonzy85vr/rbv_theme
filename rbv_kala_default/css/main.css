@@ -6,9 +6,14 @@ html {
 font-size: 100%;
 }
 
-/* field */
+/* field labels */
 .field-label {
 font-size: .8em;
+}
+/* address field */
+.field-type-addressfield {
+display: table;
+margin-bottom: .5em;
 }
 
 /* field > date */
@@ -61,7 +66,21 @@ padding-bottom: .45em;
 float: right;
 }
 
+/* field quick links */
+.field-type-link-field {
+background: #fbfbfb;
+-moz-border-radius: .4em;
+border-radius: .4em;
+margin: .5em;
+padding: .5em;
+}
+
+
 /* taxonomy */
+.field-type-taxonomy-term-reference {
+padding-bottom: 1.5em;
+clear:both;
+}
 .field-type-taxonomy-term-reference ul.links {
 list-style: none;
 }
@@ -90,6 +109,11 @@ float: left;
 background: #FFFFFF;
 }
 
+/* taxonomy > scope */
+.field-name-field-com-scope {
+clear: both;
+}
+
 /* panes */
 .node-type-org .views-row {
 background: #fbfbfb;
@@ -108,6 +132,14 @@ padding: .5em;
 float: left;
 }
 
+.node-type-event .field-name-field-relpro-project {
+background: #fbfbfb;
+-moz-border-radius: .4em;
+border-radius: .4em;
+margin: .5em;
+padding: .5em;
+float: left;
+}
 .pane-title {
 clear: both;
 font-size: 1.3em;
@@ -151,10 +183,10 @@ color: #909090;
 }
 
 /* fieldset > org > info */
-.group-org-display-info, .group-project-display-info {
+.info-fieldgroup {
 background: #fbfbfb;
 }
-.group-org-display-info .field-name-field-com-logo, .group-project-display-info .field-name-field-com-logo {
+.info-fieldgroup .field-name-field-com-logo {
 padding-right: 1.6em;
 padding-bottom: 2em;
 }
@@ -162,14 +194,13 @@ padding-bottom: 2em;
 padding-bottom: 1em;
 }
 
-/* fieldset > org > description */
-.group-org-display-description .field-type-taxonomy-term-reference, .group-project-display-description .field-type-taxonomy-term-reference {
-padding-bottom: 1.5em;
-clear:both;
-}
+/* fieldset > description */
 .field-group-fieldset .field-name-field-com-mission, .field-group-fieldset .field-name-field-com-description, .field-group-fieldset .field-name-field-com-history {
 clear: both;
 padding-top: 1em;
 }
 
-
+/* div main content. e.g. excluding comments */
+.content {
+padding-bottom: 1.5em;
+}
